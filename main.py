@@ -10,7 +10,7 @@ app.config['DEBUG'] = True
 def index():
     return render_template('user_form.html')
 
-@app.rout("/valdiate-form", methods=['POST'])
+@app.route("/valdiate-form", methods=['POST'])
 def validate_form():
     username = request.form['username']
     password = request.form['password']
@@ -23,7 +23,9 @@ def validate_form():
     if username > 20 or username <3:
         username_error = "username not valid"
         username = ''
-        
+    if password > 20 or password <3:
+        password_error = "password is not valid"
+    
 
 
 
