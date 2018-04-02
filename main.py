@@ -25,6 +25,8 @@ def validate_form():
         username = ''
     if password > 20 or password <3:
         password_error = "password is not valid"
+        password = ''
+    
     
 
 
