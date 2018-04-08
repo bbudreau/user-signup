@@ -7,27 +7,27 @@
     </header>
     <body>
         <h1>Signup</h1>
-        <form method="POST">
+        <form action ="/signup" method="POST">
             <label>Username
-                <input name="username" type="text" value='{{username}}'/>
+                <input type="text" name="username" value='{{username}}'/>
             </label> 
             <label>
                 <p class='error'>{{username_error}}</p>
             </label>
             <label>Password
-                <input name="password" type="password" value='{{password}}'/>
+                <input type="password" name="password" value=''/>
             </label>
             <label>
                 <p class='error'>{{password_error}}</p>
             </label>
             <label>Verify password
-                <input name="password" type="password" value="{{password}}"/>
+                <input type="password" name="password" value=""/>
             </label>
             <label>
                 <p class='error'>{{password_error}}</p>
             </label>
             <label>Email(optional)
-                <input name="user_email" type="text"/>
+                <input type="text" name="email" value="{{email}}"/>
             </label>
             <label>
                 <p class error="error">{{email_error}}</p>
